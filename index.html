@@ -72,7 +72,7 @@ git push origin CU-86acjnnxz_cristian_
     function copiar(id){
       const text = document.getElementById(id).innerText.trim();
       navigator.clipboard.writeText(text).then(()=>{
-        const s = document.getElementById('status');
+        const s = doclementById('status');
         s.textContent = 'Copiado: ' + text;
         setTimeout(()=> s.textContent = '', 3000);
       }, (err)=>{
