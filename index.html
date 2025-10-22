@@ -52,27 +52,4 @@
 git clone https://github.com/tu_usuario/tu_repositorio.git
 
     </section>
-  </main>
-
-  <footer>Archivo de prueba — rama: feature/nuevoejemplos</footer>
-
-  <script>
-    function copiar(id){
-      const text = document.getElementById(id).innerText.trim();
-      navigator.clipboard.writeText(text).then(()=>{
-        const s = doclementById('status');
-        s.textContent = 'Copiado: ' + text;
-        setTimeout(()=> s.textContent = '', 3000);
-      }, (err)=>{
-        alert('Error al copiar: ' + err);
-      });
-    }
-
-    function mostrarInstrucciones(){
-      const panel = document.getElementById('panelInstrucciones');
-      panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
-    }
-  </script>
-</body>
-</html>
-<!-- Cambio de prueba para ClickUp -->
+  
